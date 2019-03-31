@@ -1,0 +1,141 @@
+/*Style the header */
+.header {
+	background-color: #ADD8E6;
+	padding: 60px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	 margin: 0px;
+	 padding: 0px;
+	 font-family: Arial;
+	 text-align: center;
+	 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+}
+
+li {
+    float: left;
+	padding-right: 25px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slider {
+	width: 800px;
+	height: 400px;
+	background: url{IMG-20170410-WA0002.jpg,};
+	margin: 100px auto;
+	animation: slide 20s infinite;
+}  
+  
+@keyframes slide{
+	25%{
+	background: url(IMG-20170410-WA0006.jpg);
+	}
+	
+	50%{
+	background: url(IMG-20170410-WA0007.jpg);
+	}
+	
+	75%{
+	background: url(IMG-20170410-WA0009.jpg);
+	}
+	
+	100%{
+	background: url(IMG-20170410-WA0002.jpg);
+	}
+}  
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .li a {
+    float: none;
+    width: 100%;
+  }
+}
+  .footer{
+   background-color: orange;
+   overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+  }
